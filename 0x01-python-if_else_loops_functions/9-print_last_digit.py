@@ -4,5 +4,13 @@
 
 def print_last_digit(number):
 """Prints last digit of a nmbr and retrn it."""
-print(abs(number) % 10, end="")
-return (abs(number) % 10)
+ number = abs(number)
+
+last_digit = number % 10
+print(last_digit)
+return last_digit
+
+if __name__ == "__main__":
+
+    number = int(input("Enter a number: "))
+    last_digit = print_last_digit(number)
