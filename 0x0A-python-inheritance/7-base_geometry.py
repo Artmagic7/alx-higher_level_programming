@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Clarifies a base geometry class BaseGeometry."""
+"""Clarifies base geometry class BaseGeometry."""
 
 
 class BaseGeometry:
