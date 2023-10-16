@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Module for Square class.'''
+'''A module for Square class.'''
 from models.rectangle import Rectangle
 
 
