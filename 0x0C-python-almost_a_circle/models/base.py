@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-'''Module for Base class.'''
+'''The module for Base class.'''
 from json import dumps, loads
 import csv
 
 
 class Base:
-    '''A representation of the base of our OOP hierarchy.'''
+    '''A represntatn of the base of our OOP hierarchy.'''
 
     __nb_objects = 0
 
@@ -19,7 +19,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        '''Jsonifies a dictionary so it's quite rightly and longer.'''
+        '''Jsonifies a dictionary so it's rightly and longer.'''
         if list_dictionaries is None or not list_dictionaries:
             return "[]"
         else:
