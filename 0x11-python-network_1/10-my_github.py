@@ -5,9 +5,6 @@ Uses Basic Authentication with a personal access token as password. """
 import requests
 import sys
 
-import requests
-import sys
-
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: {} <username> <token>".format(sys.argv[0]))
