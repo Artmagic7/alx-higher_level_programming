@@ -2,14 +2,15 @@
 """ This takes in a URL, sends a request to the URL, and displays the body of the response.
 If the HTTP status code is greater than or equal to 400, print: Error code: followed by the value of the HTTP status code """
 
-from urllib import request, error
+import urllib.request
+import urllib.error
 import sys
 
-
 if __name__ == "__main__":
+    url = sys.argv[1]
+
     try:
-        with request.urlopen(sys.argv[1]) as response:
-            body = response.read()
-            print(body.decode('utf-8'))
-    except error.HTTPError as err:
-        print('Error code: {}'.format(err.code))
+        with urllib.request.urlopen(url) as response:
+            print(response.read().decode('utf-8'))
+    except urllib.error.HTTPError as e:
+        print("Error code:", e.code)
